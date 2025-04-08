@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1> Hotel Akshansh </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Akshansh Grand Hotel </h2>
+            <p>Experience Luxury and Comfort</p>
+            <a href="#booking" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room-list">
+            <div class="room-item">
+                <img src="https://th.bing.com/th/id/R.7d6d3f2949e843e94c8b222ccc8a78b8?rik=ClTXhLLbUODrDQ&riu=http%3a%2f%2fhotelhennessis.com%2fwp-content%2fuploads%2f2015%2f12%2fStandard-Single-Room-Hotel-Hennessis-1.jpg&ehk=k1yvbWgeqnsv81LBUNwz3u6KCemfUi9TBjeBC1dK%2fIE%3d&risl=&pid=ImgRaw&r=0" alt="Single Room">
+                <h3>Single Room</h3>
+                <p>Rs.1000 per night</p>
+            </div>
+            <div class="room-item">
+                <img src="https://th.bing.com/th/id/OIP.HGWaU_B6SrWncuqtipAgNwHaE8?rs=1&pid=ImgDetMain" alt="Double Room">
+                <h3>Double Room</h3>
+                <p>Rs.1500 per night</p>
+            </div>
+            <div class="room-item">
+                <img src="https://th.bing.com/th/id/OIP.KKR_A4truRoiuJjpG7sofAHaE8?rs=1&pid=ImgDetMain" alt="Suite">
+                <h3>Suite</h3>
+                <p>Rs.2500 per night</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2>Book a Room</h2>
+        <form id="booking-form">
+            <label for="checkin">Check-In Date:</label>
+            <input type="date" id="checkin" required>
+
+            <label for="checkout">Check-Out Date:</label>
+            <input type="date" id="checkout" required>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" required>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <button type="submit">Check Availability</button>
+        </form>
+        <div id="booking-result"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hotel Akshansh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
